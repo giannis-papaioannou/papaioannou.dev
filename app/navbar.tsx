@@ -22,11 +22,11 @@ const nav_links = [
 export default function NavBar({ active }: { active: string }) {
   return (
     <>
-      <div className="hidden sm:flex navbar bg-base-100 shadow-sm">
+      <div className="hidden sm:flex navbar bg-base-300 shadow-sm">
         <div className="navbar-center">
           {nav_links.map((link) => (
             <a
-              className={`btn ${link.name === active ? "btn-primary" : ""}`}
+              className={`ml-1 btn rounded-none ${link.name === active ? "btn-primary" : "btn-neutral btn-outline"}`}
               href={link.href}
               key={link.name}
             >

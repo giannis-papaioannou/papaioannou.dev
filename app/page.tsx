@@ -12,28 +12,22 @@ export default function Home() {
   return (
     <>
       <NavBar active="about-me"></NavBar>
-      <div className="flex justify-center mt-10">
-        <div className=""></div>
-        <div className="basis-2/6">
+      <div className="md:m-10 p-5 md:p-10">
+        <div className="flex-none md:flex  mt-2 md:m-5">
           <About />
           <Education />
         </div>
-        <div className="basis-3/6">
-          <div className="flex flex-row">
-            <Experience />
-          </div>
-        </div>
-      </div>
 
-      <div className="flex justify-center mt-10">
-        <div className="basis-3/4">
-          <div className="flex flex-row">
-            <div className="basis-2/3">
-              <CareerSkills skills={skills} />
-            </div>
-            <div className="basis-1/3">
-              <CertificatesList certificates={certificates} />
-            </div>
+        <div className="flex flex-row  mt-2 md:m-5">
+          <Experience />
+        </div>
+
+        <div className="flex-none md:flex mt-2 md:m-5">
+          <div className="md:basis-2/4">
+            <CareerSkills skills={skills} />
+          </div>
+          <div className="md:basis-2/4">
+            <CertificatesList certificates={certificates} />
           </div>
         </div>
       </div>

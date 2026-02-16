@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <div className="card bg-base-100 image-full shadow-sm">
+    <div className="card bg-base-100 image-full shadow-sm mt-3">
       <figure className="justify-end">
         <img src="/unipi-ds.jpeg" />
       </figure>

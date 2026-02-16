@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-sm">
-      <figure>
+    <div className="card bg-base-100 image-full shadow-sm">
+      <figure className="justify-start">
         <img src="me.png" alt="Album" />
       </figure>
       <div className="card-body">
@@ -24,7 +24,7 @@ export default function About() {
             </svg>
           </a>
           <a
-            className="btn btn-secondary btn-circle"
+            className="btn btn-secondary btn-circle mr-5"
             href="https://www.linkedin.com/in/giannis-papaioannou/"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">

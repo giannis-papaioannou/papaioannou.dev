@@ -6,6 +6,7 @@ import About from "./about";
 import Education from "./education";
 import CareerSkills from "./skills";
 import CertificatesList from "./certificates";
+import Experience from "./experience";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         </div>
         <div className="basis-3/6">
           <div className="flex flex-row">
-
+            <Experience />
           </div>
         </div>
       </div>

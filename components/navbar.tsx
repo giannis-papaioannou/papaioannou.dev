@@ -24,7 +24,7 @@ export default function NavBar({ active }: { active: string }) {
         <div className="navbar-center">
           {nav_links.map((link) => (
             <a
-              className={`ml-1 btn rounded-none btn-primary ${link.name === active ? "" : "btn-outline"}`}
+              className={`ml-1 btn rounded-none btn-accent ${link.name === active ? "" : "btn-outline"}`}
               href={link.href}
               key={link.name}
             >
@@ -33,7 +33,7 @@ export default function NavBar({ active }: { active: string }) {
           ))}
         </div>
       </div>
-      <div className="flex sm:hidden dock bg-base-200">
+      <div className="flex sm:hidden dock bg-accent">
         {nav_links.map((link) => (
           <a href={link.href} className={`${link.name === active ? "dock-active" : ""} dock-item`} key={link.name}>
             {link.svg}

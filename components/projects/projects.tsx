@@ -7,7 +7,7 @@ export default function ProjectsList() {
     <>
       {projects.map((project) => (
         <div
-          className="card bg-base-200 shadow-sm sm:max-w-lg mt-5 sm:mt-0"
+          className="card bg-base-300 shadow-sm sm:max-w-lg mt-5 sm:mt-0"
           key={project.title}
         >
           <div className="card-body">
@@ -29,7 +29,7 @@ export default function ProjectsList() {
                 <div className="divider" />
                 <div className="text-xs font-semibold opacity-60">
                   {project.tags.map((tag) => (
-                    <div className="badge" key={tag}>
+                    <div className="badge mr-0.5 mt-0.5" key={tag}>
                       {tag}
                     </div>
                   ))}

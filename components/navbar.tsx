@@ -33,7 +33,7 @@ export default function NavBar({ active }: { active: string }) {
           ))}
         </div>
       </div>
-      <div className="flex sm:hidden dock">
+      <div className="flex sm:hidden dock bg-base-200">
         {nav_links.map((link) => (
           <a href={link.href} className={`${link.name === active ? "dock-active" : ""} dock-item`} key={link.name}>
             {link.svg}

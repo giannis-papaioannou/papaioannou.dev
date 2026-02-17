@@ -1,11 +1,12 @@
 import LinkedInSvg from "../../public/svgs/linkedin-brand-solid.svg"
 import GithubSvg from "../../public/svgs/github-brands-solid.svg"
+import EmailSvg from "../../public/svgs/envelope-solid.svg"
 import Image from "next/image";
 
 export default function About() {
   return (
     <>
-      <div className="card bg-base-200 md:image-full shadow-sm md:max-w-lg">
+      <div className="card bg-base-100 md:image-full shadow-sm md:max-w-lg ">
         <figure className="justify-start">
           <img src="images/me.png" />
         </figure>
@@ -35,7 +36,13 @@ export default function About() {
               <Image src={LinkedInSvg} alt="linked-in-icon" />
             </a>
             <a
-              className="btn btn-secondary"
+              className="btn btn-info btn-square"
+              href="mailto:papaioannou.giannis@protonmail.com"
+            >
+              <Image src={EmailSvg} alt="email-icon" />
+            </a>
+            <a
+              className="btn btn-success"
               href="pdf/PapaioannouGiannis-CV.pdf"
             >
               Download CV!

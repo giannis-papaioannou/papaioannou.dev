@@ -1,35 +1,29 @@
-import NavBar from "./navbar";
+import NavBar from "../components/navbar";
 
-import { certificates } from "@/data/certificates";
-import { skills } from "@/data/skills";
-import About from "./about";
-import Education from "./education";
-import CareerSkills from "./skills";
-import CertificatesList from "./certificates";
-import Experience from "./experience";
+import About from "../components/about-me/about";
+import Education from "../components/about-me/education";
+import CareerSkills from "../components/about-me/skills";
+import CertificatesList from "../components/about-me/certificates";
+import Experiences from "../components/about-me/experiences";
 
 export default function Home() {
   return (
     <>
       <NavBar active="about-me"></NavBar>
       <div className="md:m-10 p-5 md:p-10">
-        <div className="flex-none md:flex  mt-2 md:m-5">
+        <div className="flex-none md:flex md:justify-center mt-2 md:m-5">
           <About />
           <Education />
         </div>
-
-        <div className="flex flex-row  mt-2 md:m-5">
-          <Experience />
+        <div className="flex-none md:flex md:justify-center mt-5 md:m-5">
+          <Experiences />
+        </div>
+        <div className="flex-none md:flex md:justify-center mt-5 md:m-5">
+          <CareerSkills />
+          <CertificatesList />
         </div>
 
-        <div className="flex-none md:flex mt-2 md:m-5">
-          <div className="md:basis-2/4">
-            <CareerSkills skills={skills} />
-          </div>
-          <div className="md:basis-2/4">
-            <CertificatesList certificates={certificates} />
-          </div>
-        </div>
+        <div className="mb-10 md:mb-0"></div>
       </div>
     </>
   );

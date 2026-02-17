@@ -1,4 +1,6 @@
-export const skills = [
+import { SkillCategory } from "./types";
+
+export const skills: SkillCategory[] = [
   {
     title: "Languages",
     description: "Python, TypeScript, Javascript, Golang, Java, PHP, Bash",

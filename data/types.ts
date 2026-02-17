@@ -9,3 +9,22 @@ export type CertificateCategory = {
   skill: string;
   link: string;
 };
+
+
+export type ExperienceCategory = {
+  image: string;
+  job_title: string;
+  work: string;
+  duration: string;
+  points: string[];
+  min_points: number;
+}
+
+export type ProjectCategory = {
+  images: string[];
+  title: string;
+  description: string;
+  tags: string[];
+  status: string;
+  link: string;
+}

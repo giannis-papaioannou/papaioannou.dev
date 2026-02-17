@@ -1,9 +1,8 @@
-import { SkillCategory } from "@/data/types";
+import { skills } from "@/data/skills";
 
-
-export default function CareerSkills({ skills }: { skills: SkillCategory[] }) {
+export default function CareerSkills() {
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <div className="card bg-base-100 shadow-sm md:max-w-xl">
       <div className="card-body">
         <h2 className="card-title uppercase font-semibold">Skills</h2>
         <ul className="list bg-base-200">

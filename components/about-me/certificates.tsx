@@ -1,12 +1,8 @@
-import { CertificateCategory } from "@/data/types";
+import { certificates } from "@/data/certificates";
 
-export default function CertificatesList({
-  certificates,
-}: {
-  certificates: CertificateCategory[];
-}) {
+export default function CertificatesList() {
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <div className="card bg-base-100 shadow-sm md:max-w-xl">
       <div className="card-body">
         <h2 className="card-title uppercase font-semibold">Certificates</h2>
         <ul className="list bg-base-200">

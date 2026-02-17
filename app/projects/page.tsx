@@ -1,12 +1,15 @@
-import NavBar from "../navbar";
+import NavBar from "../../components/navbar";
+import ProjectsList from "@/components/projects/projects";
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <NavBar active="projects"></NavBar>
 
-      <div className="flex justify-center mt-10">
-        <div className="basis-2/3">Under Contruction!</div>
+      <div className="md:m-10 p-5 md:p-10">
+        <div className="flex-none md:grid md:grid-cols-4 md:gap-4 md:justify-center-safe">
+          <ProjectsList />
+        </div>
       </div>
     </>
   );

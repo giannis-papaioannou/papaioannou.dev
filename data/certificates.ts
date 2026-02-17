@@ -1,4 +1,6 @@
-export const certificates = [
+import { CertificateCategory } from "./types";
+
+export const certificates: CertificateCategory[] = [
   {
     date: "February 2026",
     title: "Understanding TypeScript",

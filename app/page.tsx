@@ -88,12 +88,12 @@ export default function Home() {
             </div>
           </div>
           <div id="experience" className="md:carousel-item w-full max-h-fit md:overflow-y-none">
-            <div className="m-2 md:m-0 p-5">
+            <div className="md:flex m-2 md:m-0 p-5 md:justify-center md:w-full">
               <Experiences />
             </div>
           </div>
           <div id="skills" className="md:carousel-item w-full max-h-fit md:overflow-y-none">
-            <div className="md:grid md:grid-cols-2 m-2 md:m-0 p-5">
+            <div className="md:grid md:grid-cols-2 m-2 md:m-0 p-5 md:justify-center md:w-full">
               <CareerSkills />
               <CertificatesList />
             </div>

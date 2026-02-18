@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="card md:card-border bg-base-100 shadow-sm md:w-90 md:h-fit t md:m-2">
+      <div className="card md:card-border bg-base-100 shadow-sm md:w-90 md:mt-0 md:h-fit t md:m-2">
         <figure>
           <img src="images/me.png" />
         </figure>

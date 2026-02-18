@@ -1,10 +1,13 @@
 export default function Education() {
   return (
-      <div className="card bg-base-100 shadow-sm md:w-90 md:h-fit mt-5 md:mt-0 md:m-2">
-      <figure className="">
-        <img src="images/unipi-ds.jpeg" />
+    <div className="card bg-base-100 shadow-sm md:w-90 md:h-fit mt-5 md:mt-0 md:m-2 glass">
+      <figure>
+        <img
+          src="images/unipi-ds.jpeg"
+          className="max-w-sm rounded-lg shadow-2xl"
+        />
       </figure>
-      <div className="card-body bg-base-200">
+      <div className="card-body">
         <div className="p-5">
           <div className="text-base uppercase font-bold opacity-100">
             BACHELOR: University of Piraeus, Department of Digital Systems
@@ -20,7 +23,7 @@ export default function Education() {
             PARALLEL EXECUTION OF REVERSE TOP-K QUERIES IN MAIN MEMORY
           </a>
           <br />
-          <div className="">
+          <div>
             Conducted original research on optimizing reverse top-k queries
             through parallel processing in main memory, de- signing a parallel
             processing framework and programmable API to advance query

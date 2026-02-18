@@ -11,15 +11,15 @@ export default function SingleExperience({
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="card bg-base-300 shadow-sm md:max-w-xl" key={experience.work}>
+    <div className="card bg-base-300 shadow-sm md:max-w-2xl" key={experience.work}>
       <div className="card-body">
         <h2 className="card-title font-black uppercase opacity-60 text-sm md:text-lg">
           <figure
             style={{
-              width: "40px",
               height: "40px",
               borderRadius: "50%",
             }}
+            className="w-(40px)"
           >
             <img
               src={experience.image}

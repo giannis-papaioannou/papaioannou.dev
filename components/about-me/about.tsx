@@ -1,27 +1,27 @@
-import LinkedInSvg from "../../public/svgs/linkedin-brand-solid.svg"
-import GithubSvg from "../../public/svgs/github-brands-solid.svg"
-import EmailSvg from "../../public/svgs/envelope-solid.svg"
+import LinkedInSvg from "../../public/svgs/linkedin-brand-solid.svg";
+import GithubSvg from "../../public/svgs/github-brands-solid.svg";
+import EmailSvg from "../../public/svgs/envelope-solid.svg";
 import Image from "next/image";
 
 export default function About() {
   return (
     <>
-      <div className="card bg-base-100 md:image-full shadow-sm md:max-w-lg ">
-        <figure className="justify-start">
+      <div className="card bg-base-100 shadow-sm ">
+        <figure className="md:mt-5">
           <img src="images/me.png" />
         </figure>
-        <div className="card-body">
-          <h1 className="card-title">About me:</h1>
-          <p>
-                Senior Software Engineer specializing in Python, with expertise
-                in building scalable systems and solving complex tech- nical
-                challenges. Engineered robust solutions for data pipelines and
-                distributed applications, maintaining reliability through
-                continuous refinement. Eager to continuously expand technical
-                knowledge and apply innovative approaches to advance engineering
-                practices and team goals.
-          </p>
-          <p></p>
+        <div className="card-body md:mt-5 bg-base-300 ">
+          <div className="md:flex md:p-5">
+            <div>
+              Senior Software Engineer specializing in Python, with expertise in
+              building scalable systems and solving complex tech- nical
+              challenges. Engineered robust solutions for data pipelines and
+              distributed applications, maintaining reliability through
+              continuous refinement. Eager to continuously expand technical
+              knowledge and apply innovative approaches to advance engineering
+              practices and team goals.
+            </div>
+          </div>
           <div className="card-actions justify-end">
             <a
               className="btn btn-secondary btn-circle"
@@ -41,10 +41,7 @@ export default function About() {
             >
               <Image src={EmailSvg} alt="email-icon" />
             </a>
-            <a
-              className="btn btn-success"
-              href="pdf/PapaioannouGiannis-CV.pdf"
-            >
+            <a className="btn btn-success" href="pdf/PapaioannouGiannis-CV.pdf">
               Download CV!
             </a>
           </div>

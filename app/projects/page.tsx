@@ -10,6 +10,9 @@ export default function Projects() {
         <div className="flex-none md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 md:justify-center-safe">
           <ProjectsList />
         </div>
+      </div>     
+      <div className="mb-10 md:hidden">
+        <div className="divider"></div>
       </div>
     </>
   );

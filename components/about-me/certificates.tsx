@@ -2,7 +2,7 @@ import { certificates } from "@/data/certificates";
 
 export default function CertificatesList() {
   return (
-    <div className="card bg-base-100 shadow-sm md:max-w-xl">
+    <div className="card bg-base-100 shadow-sm">
       <div className="card-body">
         <h2 className="card-title uppercase font-semibold">Certificates</h2>
         <ul className="list bg-base-200">
@@ -14,7 +14,9 @@ export default function CertificatesList() {
                     {certificate.date}
                   </div>
                   <div className="">
-                    <div className="text-secondary">{certificate.skill}</div>
+                    <div className="link link-secondary">
+                      {certificate.skill}
+                    </div>
                     <div className="text-xs font-semibold opacity-60">
                       {certificate.title}
                     </div>

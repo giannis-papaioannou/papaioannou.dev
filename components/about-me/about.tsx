@@ -6,21 +6,19 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="card bg-base-100 shadow-sm ">
-        <figure className="md:mt-5">
+      <div className="card md:card-border bg-base-100 shadow-sm md:w-90 md:h-fit t md:m-2">
+        <figure>
           <img src="images/me.png" />
         </figure>
-        <div className="card-body md:mt-5 bg-base-300">
-          <div className="md:flex md:p-5">
-            <div>
-              Senior Software Engineer specializing in Python, with expertise in
-              building scalable systems and solving complex tech- nical
-              challenges. Engineered robust solutions for data pipelines and
-              distributed applications, maintaining reliability through
-              continuous refinement. Eager to continuously expand technical
-              knowledge and apply innovative approaches to advance engineering
-              practices and team goals.
-            </div>
+        <div className="card-body bg-base-300">
+          <div>
+            Senior Software Engineer specializing in Python, with expertise in
+            building scalable systems and solving complex tech- nical
+            challenges. Engineered robust solutions for data pipelines and
+            distributed applications, maintaining reliability through continuous
+            refinement. Eager to continuously expand technical knowledge and
+            apply innovative approaches to advance engineering practices and
+            team goals.
           </div>
           <div className="card-actions justify-end">
             <a

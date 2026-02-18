@@ -10,7 +10,7 @@ export default function About() {
         <figure className="md:mt-5">
           <img src="images/me.png" />
         </figure>
-        <div className="card-body md:mt-5 bg-base-300 ">
+        <div className="card-body md:mt-5 bg-base-300">
           <div className="md:flex md:p-5">
             <div>
               Senior Software Engineer specializing in Python, with expertise in

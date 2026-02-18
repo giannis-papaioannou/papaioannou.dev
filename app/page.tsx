@@ -19,7 +19,8 @@ export default function Home() {
 
   useEffect(() => {
     const locationHash = window.location.hash || slides[0];
-    if (locationHash !== slides[indexSelection]) router.push(slides[indexSelection]);
+    if (locationHash !== slides[indexSelection])
+      router.push(slides[indexSelection]);
   }, [indexSelection]);
 
   const updateIndex = (wheelValue: number) => {
@@ -49,39 +50,36 @@ export default function Home() {
   };
   return (
     <>
-      <NavBar active="about-me"></NavBar>
+      <NavBar active="about-me">
+        <div className="hidden md:flex breadcrumbs">
+          <ul>
+            <Step
+              refValue="#about-me"
+              displayValue="About"
+              currentStep={slides[indexSelection]}
+              triggerFunction={() => setIndexSelection(0)}
+            />
+            <Step
+              refValue="#experience"
+              displayValue="Experience"
+              currentStep={slides[indexSelection]}
+              triggerFunction={() => setIndexSelection(1)}
+            />
+            <Step
+              refValue="#skills"
+              displayValue="Skills"
+              currentStep={slides[indexSelection]}
+              triggerFunction={() => setIndexSelection(2)}
+            />
+          </ul>
+        </div>
+      </NavBar>
       <div
         className="flex"
         onWheel={(event) => {
           updateIndex(event.deltaY);
         }}
       >
-        <ul className="hidden md:flex md:flex-col mt-auto mb-auto ml-0 timeline timeline-vertical">
-          <Step
-            refValue="#about-me"
-            displayValue="About"
-            currentStep={slides[indexSelection]}
-            triggerFunction={() => setIndexSelection(0)}
-            hrBefore={false}
-            hrAfter={true}
-          />
-          <Step
-            refValue="#experience"
-            displayValue="Experience"
-            currentStep={slides[indexSelection]}
-            triggerFunction={() => setIndexSelection(1)}
-            hrBefore={true}
-            hrAfter={true}
-          />
-          <Step
-            refValue="#skills"
-            displayValue="Skills"
-            currentStep={slides[indexSelection]}
-            triggerFunction={() => setIndexSelection(2)}
-            hrBefore={true}
-            hrAfter={false}
-          />
-        </ul>
         <div className="md:carousel w-full">
           <div id="about-me" className="md:carousel-item relative w-full ">
             <div className="md:grid md:grid-cols-2 md:m-10 p-5 md:p-10">

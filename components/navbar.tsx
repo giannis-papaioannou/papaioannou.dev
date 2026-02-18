@@ -1,6 +1,7 @@
 import Image from "next/image";
-import HouseSvg from "../public/svgs/house-regular.svg"
-import ListSvg from "../public/svgs/list-solid.svg"
+import HouseSvg from "../public/svgs/house-regular.svg";
+import ListSvg from "../public/svgs/list-solid.svg";
+import { JSX } from "react";
 
 const nav_links = [
   {
@@ -17,11 +18,17 @@ const nav_links = [
   },
 ];
 
-export default function NavBar({ active }: { active: string }) {
+export default function NavBar({
+  active,
+  children,
+}: {
+  active: string;
+  children?: JSX.Element;
+}) {
   return (
     <>
-      <div className="hidden sm:flex navbar bg-base-300 shadow-sm">
-        <div className="navbar-center">
+      <div className="navbar bg-base-300 shadow-sm">
+        <div className="navbar-start">
           {nav_links.map((link) => (
             <a
               className={`ml-1 btn rounded-none btn-accent ${link.name === active ? "" : "btn-outline"}`}
@@ -32,10 +39,17 @@ export default function NavBar({ active }: { active: string }) {
             </a>
           ))}
         </div>
+        <div className="navbar-center">{children}</div>
+        <div className="navbar-end"></div>
       </div>
+
       <div className="flex sm:hidden dock bg-accent">
         {nav_links.map((link) => (
-          <a href={link.href} className={`${link.name === active ? "dock-active" : ""} dock-item`} key={link.name}>
+          <a
+            href={link.href}
+            className={`${link.name === active ? "dock-active" : ""} dock-item`}
+            key={link.name}
+          >
             {link.svg}
             <span className={`dock-label `}>{link.display}</span>
           </a>

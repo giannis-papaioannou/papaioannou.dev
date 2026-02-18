@@ -27,7 +27,7 @@ export default function NavBar({
 }) {
   return (
     <>
-      <div className="navbar bg-base-300 shadow-sm">
+      <div className="hidden sm:flex navbar bg-base-300 shadow-sm">
         <div className="navbar-start">
           {nav_links.map((link) => (
             <a

@@ -8,7 +8,7 @@ export default function About() {
     <>
       <div className="card md:card-border bg-base-100 shadow-sm md:w-90 md:mt-0 md:h-fit md:m-2">
         <figure>
-          <img src="images/me.png" />
+          <img src="images/me.png"  alt="personal-photo"/>
         </figure>
         <div className="card-body bg-base-300">
           <div>

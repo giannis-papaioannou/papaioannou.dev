@@ -31,6 +31,7 @@ export default function SingleExperience({
                 height: "100%",
                 objectFit: "cover",
               }}
+              alt={`logo from company ${experience.work}`}
             />
           </figure>
           {experience.work}

@@ -8,13 +8,13 @@ const nav_links = [
     name: "about-me",
     href: "/",
     display: "About Me",
-    svg: <Image src={HouseSvg} width={19.2} height={19.2} alt="" />,
+    svg: <Image src={HouseSvg} width={19.2} height={19.2} alt="home-icon" />,
   },
   {
     name: "projects",
     href: "/projects",
     display: "Projects",
-    svg: <Image src={ListSvg} width={19.2} height={19.2} alt="" />,
+    svg: <Image src={ListSvg} width={19.2} height={19.2} alt="projects-icon" />,
   },
 ];
 
@@ -44,19 +44,6 @@ export default function NavBar({
         <div className="hidden lg:flex lg:navbar-end"></div>
       </div>
       <div className="hidden md:flex lg:hidden justify-center">{children}</div>
-
-      {/* <div className="flex sm:hidden dock bg-accent">
-        {nav_links.map((link) => (
-          <a
-            href={link.href}
-            className={`${link.name === active ? "dock-active" : ""} dock-item`}
-            key={link.name}
-          >
-            {link.svg}
-            <span className={`dock-label bg-base-300 `}>{link.display}</span>
-          </a>
-        ))}
-      </div> */}
     </>
   );
 }

@@ -1,10 +1,11 @@
 export default function Education() {
   return (
-    <div className="card bg-base-100 shadow-sm md:w-90 md:h-fit mt-5 md:mt-0 md:m-2 glass">
+    <div className="card bg-base-100 md:w-90 md:h-fit mt-5 md:mt-0 md:m-2 glass">
       <figure>
         <img
           src="images/unipi-ds.jpeg"
           className="max-w-sm rounded-lg mt-5 shadow-2xl"
+          alt="university-of-piraeus-logo"
         />
       </figure>
       <div className="card-body">

@@ -11,7 +11,7 @@ export const projects: ProjectCategory[] = [
     link: "https://github.com/giannis-papaioannou/papaioannou.dev",
   },
   {
-    images: [],
+    images: ["images/homelab.png"],
     title: "Homelab",
     description:
       "In my spare time, I've been developing a Homelab project that operates on a Proxmox cluster. This showcases my skills in designing, implementing, and managing complex systems and infrastructure. The cluster hosts various open-source services that I utilize daily.",

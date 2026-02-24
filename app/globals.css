@@ -1,12 +1,48 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: dark --default --prefersdark;
+  themes: light, dark --prefersdark;
 }
 /* https://daisyui.com/theme-generator/#theme=eJx9lPFu4yAMxl8FRZp0J60WNgSSexua0Gu0NFSQaN1O9-5HaK9NGrY_sX_fZxss_hSDOdniV9Ea_1a8Fo3rnd-F5miX0d3uGt-bYHfIecy4t745_kD5wjjjP58ZWjDE84xYMirPNG4Y7TDeuVpvuLPvTsZ_3BE9lwOskREBocqwG1sqZw2viZECLmmpCTbSbaaCKhmVEhTJLL4tUl2LxMaUhlqUS5lpmiWr5bUEI0GgFG7RrX2d7FXUSAFY6qVmsNPoTf_dm9yQ7ZVXG7QbDu7RKqZWpWCEJRDhM5l3BI41i2sClRar-5vieCHcYZXGQs1QEcgqg-aXBDhh1ChAXPm_Gz90w--nxyQUTGpQXGbYLwdQTAtQ1UpjvXf-0b1I7kLHVQEhcEN-1XzsBzWI27zetN0U4m71thmTPYfS29Myeehs32Yze3eZ4_-jofu0aysqV7mH0yOxd761M43nSwq09jweZyidBtcFezu19mCmPk40-sm-FmdvD9aH9JOk0N9_RrJF-A */
 
 @plugin "daisyui/theme" {
+  name: "light";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.003 247.858);
+  --color-base-200: oklch(96% 0.007 247.896);
+  --color-base-300: oklch(92% 0.013 255.508);
+  --color-base-content: oklch(20% 0.042 265.755);
+  --color-primary: oklch(80% 0.105 251.813);
+  --color-primary-content: oklch(28% 0.091 267.935);
+  --color-secondary: oklch(81% 0.117 11.638);
+  --color-secondary-content: oklch(27% 0.105 12.094);
+  --color-accent: oklch(0% 0 0);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(37% 0.044 257.287);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(26% 0.051 172.552);
+  --color-warning: oklch(75% 0.183 55.934);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 1;
+}
+
+
+@plugin "daisyui/theme" {
   name: "dark";
-  default: true;
+  default: false;
   prefersdark: true;
   color-scheme: "dark";
   --color-base-100: oklch(14% 0 0);

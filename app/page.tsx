@@ -80,7 +80,8 @@ export default function Home() {
           updateIndex(event.deltaY);
         }}
       >
-        <div className="md:carousel w-full md:overflow-y-none">
+        <br />
+        <div className="md:carousel w-full md:overflow-y-none mt-15 sm:mt-0">
           <div id="about-me" className="md:carousel-item w-full md:overflow-y-none">
             <div className="md:flex m-2 md:m-0 p-5 md:justify-center md:w-full">
               <About />
@@ -93,15 +94,12 @@ export default function Home() {
             </div>
           </div>
           <div id="skills" className="md:carousel-item w-full max-h-fit md:overflow-y-none">
-            <div className="md:grid md:grid-cols-2 m-2 md:m-0 p-5 md:justify-center md:w-full">
+            <div className="md:flex m-2 md:m-0 p-5 md:justify-center md:w-full">
               <CareerSkills />
               <CertificatesList />
             </div>
           </div>
         </div>
-      </div>
-      <div className="mb-10 md:hidden">
-        <div className="divider"></div>
       </div>
     </>
   );

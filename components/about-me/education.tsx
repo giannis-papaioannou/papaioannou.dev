@@ -4,11 +4,11 @@ export default function Education() {
       <figure>
         <img
           src="images/unipi-ds.jpeg"
-          className="max-w-sm rounded-lg shadow-2xl"
+          className="max-w-sm rounded-lg mt-5 shadow-2xl"
         />
       </figure>
       <div className="card-body">
-        <div className="p-5">
+        <div className="pl-5 pr-5">
           <div className="text-base uppercase font-bold opacity-100">
             BACHELOR: University of Piraeus, Department of Digital Systems
           </div>
@@ -25,7 +25,7 @@ export default function Education() {
           <br />
           <div>
             Conducted original research on optimizing reverse top-k queries
-            through parallel processing in main memory, de- signing a parallel
+            through parallel processing in main memory, designing a parallel
             processing framework and programmable API to advance query
             efficiency in distributed systems, demonstrating scalable
             performance gains over single-threaded approaches.

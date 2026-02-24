@@ -6,14 +6,14 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="card md:card-border bg-base-100 shadow-sm md:w-90 md:mt-0 md:h-fit t md:m-2">
+      <div className="card md:card-border bg-base-100 shadow-sm md:w-90 md:mt-0 md:h-fit md:m-2">
         <figure>
           <img src="images/me.png" />
         </figure>
         <div className="card-body bg-base-300">
           <div>
             Senior Software Engineer specializing in Python, with expertise in
-            building scalable systems and solving complex tech- nical
+            building scalable systems and solving complex technical
             challenges. Engineered robust solutions for data pipelines and
             distributed applications, maintaining reliability through continuous
             refinement. Eager to continuously expand technical knowledge and

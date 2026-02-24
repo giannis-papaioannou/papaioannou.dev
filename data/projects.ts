@@ -8,7 +8,7 @@ export const projects: ProjectCategory[] = [
       "I developed this personal website, showcasing my skills in the frontend side of development using NextJS, after some issues arised with my ghost deployment.",
     tags: ["NextJS", "TailwindCSS", "DaisyUI", "TypeScript"],
     status: "Ongoing",
-    link: "",
+    link: "https://github.com/giannis-papaioannou/papaioannou.dev",
   },
   {
     images: [],

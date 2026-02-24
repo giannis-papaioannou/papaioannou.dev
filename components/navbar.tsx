@@ -27,23 +27,25 @@ export default function NavBar({
 }) {
   return (
     <>
-      <div className="hidden sm:flex navbar bg-base-300 shadow-sm">
-        <div className="navbar-start">
+      <div className="fixed z-1 md:relative md:flex justify-center navbar bg-base-300 shadow-sm">
+        <div className="lg:navbar-start">
           {nav_links.map((link) => (
             <a
               className={`ml-1 btn rounded-none btn-accent ${link.name === active ? "" : "btn-outline"}`}
               href={link.href}
               key={link.name}
             >
+              {link.svg}
               {link.display}
             </a>
           ))}
         </div>
-        <div className="navbar-center">{children}</div>
-        <div className="navbar-end"></div>
+        <div className="hidden lg:flex lg:navbar-center">{children}</div>
+        <div className="hidden lg:flex lg:navbar-end"></div>
       </div>
+      <div className="hidden md:flex lg:hidden justify-center">{children}</div>
 
-      <div className="flex sm:hidden dock bg-accent">
+      {/* <div className="flex sm:hidden dock bg-accent">
         {nav_links.map((link) => (
           <a
             href={link.href}
@@ -51,10 +53,10 @@ export default function NavBar({
             key={link.name}
           >
             {link.svg}
-            <span className={`dock-label `}>{link.display}</span>
+            <span className={`dock-label bg-base-300 `}>{link.display}</span>
           </a>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }

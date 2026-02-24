@@ -40,10 +40,3 @@ Deploy the project using **[docker compose](https://www.docker.com/):**
 ```sh
 docker compose up -d --build
 ```
-
-
-## License
-
-Papaioannou.dev.git is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----

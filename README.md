@@ -8,17 +8,12 @@
 <em></em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/git/license/giannis/papaioannou.dev.git?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-<img src="https://img.shields.io/git/last-commit/giannis/papaioannou.dev.git?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/git/languages/top/giannis/papaioannou.dev.git?style=default&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/git/languages/count/giannis/papaioannou.dev.git?style=default&color=0080ff" alt="repo-language-count">
-
-<!-- default option, no dependency badges. -->
-
-<!-- default option, no dependency badges. -->
+<img src="https://img.shields.io/github/license/giannis-papaioannou/papaioannou.dev?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+<img src="https://img.shields.io/github/last-commit/giannis-papaioannou/papaioannou.dev?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/giannis-papaioannou/papaioannou.dev?style=default&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/giannis-papaioannou/papaioannou.dev?style=default&color=0080ff" alt="repo-language-count">
 
 </div>
-<br>
 
 
 ## Overview

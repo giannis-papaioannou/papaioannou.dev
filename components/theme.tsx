@@ -28,7 +28,7 @@ export default function PersistentThemeController({
   }, []);
 
   return (
-    <div data-theme={themeValue} className="h-screen">
+    <div data-theme={themeValue} className="sm:h-screen">
       {children}
       {themeValue == "light" && (
         <div className="fab">
